@@ -1,0 +1,17 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.card{
+  width: 50vw;
+}
+.card-header {
+  background-color: white;
+  align-items: center;
+}
+.card-header img {
+  width: 70px;
+}
+.card-header p {
+  font-weight: 600;
+
+}
