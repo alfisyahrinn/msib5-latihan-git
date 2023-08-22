@@ -10,7 +10,8 @@ $data = [
   'favorite' => [
     'team' => 'Chelsea',
     'goat' => 'hazard'
-  ]
+  ],
+  'alasan' => 'saya ingin keluar dari zona nyaman dengan ada tantangan  baru mengikuti program ini bisa megembangkan keterampilan, di dunia kerja saat ini sangat  berpengaruh dengan perkembangan teknologi, dalam bidang web development,'
 ]
 ?>
 <!doctype html>
@@ -60,11 +61,26 @@ $data = [
             </p>
           </div>
         </div>
-        <div class="d-flex gap-3 align-items-center">
+        <div class="d-flex gap-3 align-items-center pb-2" style="border-bottom: 1px solid gray ;">
           <img src="src/assets/img/emoji-heart-eyes-fill.svg" alt="alfi" style="width: 35px;">
           <div class="my-auto">
             <small style="font-size:12px;"><?= $data['favorite']['goat']; ?></small>
             <p style="font-weight: 500; font-size:18px;"><?= $data['favorite']['team']; ?></p>
+          </div>
+        </div>
+        <div class="d-flex gap-3 align-items-center">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <p style="font-size:18px;" class="m-2">Motivasi mengikuti program</p>
+                
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <small style="font-size:12px;"><?= $data['alasan']; ?></small></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
